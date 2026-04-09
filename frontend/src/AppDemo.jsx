@@ -14,6 +14,7 @@ import Browse from './pages/Browse';
 import Watch from './pages/Watch';
 import Auth from './pages/Auth';
 import Watchlist from './pages/Watchlist';
+import Profile from './pages/Profile';
 
 // Store
 import { useAuthStore } from './store/authStore';
@@ -75,6 +76,11 @@ function App() {
                     <Route path="/watchlist" element={
                       <ProtectedRoute>
                         <Watchlist />
+                      </ProtectedRoute>
+                    } />
+                    <Route path="/profile" element={
+                      <ProtectedRoute>
+                        <Profile />
                       </ProtectedRoute>
                     } />
                     
